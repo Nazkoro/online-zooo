@@ -1,0 +1,441 @@
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../assets/fonts/montserrat-v15-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../assets/fonts/montserrat-v15-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-500 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""),
+    url("../assets/fonts/montserrat-v15-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../assets/fonts/montserrat-v15-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-600 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""),
+    url("../assets/fonts/montserrat-v15-latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../assets/fonts/montserrat-v15-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-800 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  src: local(""),
+    url("../assets/fonts/montserrat-v15-latin-800.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../assets/fonts/montserrat-v15-latin-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-size: 16px;
+  font-weight: normal;
+  color: #000000;
+  position: relative;
+  overflow-x: hidden;
+}
+.wrapper {
+  max-width: 1406px;
+  margin: 0 auto;
+}
+.header {
+  background: #f58021;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110px;
+  margin-bottom: 40px;
+}
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header__item {
+  margin-right: 48.25px;
+}
+.header__item:last-child {
+  margin-right: 67px;
+}
+
+.header__ico-item {
+  margin-right: 30px;
+}
+.header__ico-item:hover,
+.header__ico-item:focus,
+.header__ico-item:active {
+  opacity: 0.7;
+}
+
+.header__ico-item:last-child {
+  margin-right: 0;
+}
+.header__logo {
+  width: 96px;
+  height: 50px;
+}
+.header__link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  text-decoration: none;
+  color: #000000;
+}
+.header__link:hover,
+.header__link:focus,
+.header__link:active {
+  color: #00a092;
+}
+
+.map-content {
+  margin-top: 40px;
+  margin: 0 auto;
+  width: 601px;
+  height: 131px;
+  margin-bottom: 70px;
+}
+.map {
+  background: url(../assets/icons/Map.svg);
+  /* background-size: 100% 100%; */
+  width: 1406px;
+  height: 912px;
+  position: relative;
+  margin-bottom: 150px;
+}
+.map-title {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 66px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #20113d;
+}
+.white-tag-eagle {
+  position: absolute;
+  transition: 0.4s;
+}
+.map-eagle {
+  position: relative;
+  left: 166px;
+  top: 398px;
+}
+
+.map-gorilla {
+  position: relative;
+  top: 487.56px;
+  left: 699.3px;
+}
+
+.orange-tag-gorila {
+  position: absolute;
+  filter: none;
+  transition: 0.4s;
+}
+.interactive:hover {
+  transform: scale(1.2);
+  /* filter: invert(90%); */
+  filter: brightness(0) invert(1);
+}
+.orange-tag-panda {
+  position: absolute;
+  transition: 0.4s;
+}
+.orange-tag-lemur {
+  position: absolute;
+  transition: 0.4s;
+}
+.orange-tag-aligator {
+  position: absolute;
+  transition: 0.4s;
+}
+.orange-tag-lion {
+  position: absolute;
+  transition: 0.4s;
+}
+.orange-tag-tiger {
+  position: absolute;
+  transition: 0.4s;
+}
+.orange-tag-coala {
+  position: absolute;
+  transition: 0.4s;
+}
+.gorila {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  width: 54.86px;
+  height: 46.7px;
+}
+.Lemur {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  height: 56px;
+  width: 33px;
+}
+.panda {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  width: 58px;
+  height: 43.6px;
+}
+.eagle {
+  position: absolute;
+  top: 40px;
+  left: 47px;
+  width: 48px;
+  height: 46.7px;
+}
+.aligator {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  width: 57.7px;
+  height: 46.7px;
+}
+.Lion {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  width: 52px;
+  height: 46.7px;
+}
+.tiger {
+  position: absolute;
+  left: 12px;
+  top: 20px;
+  width: 59.8px;
+  height: 46.7px;
+}
+.Coala {
+  position: absolute;
+  left: 15px;
+  top: 20px;
+  width: 42.6px;
+  height: 53.9px;
+}
+.map-panda {
+  position: absolute;
+  top: 360px;
+
+  left: 959px;
+}
+.map-lemur {
+  position: absolute;
+  top: 607px;
+
+  left: 802px;
+}
+.map-aligator {
+  position: absolute;
+  top: 417px;
+  left: 298px;
+}
+.map-lion {
+  position: absolute;
+  top: 464px;
+  left: 583px;
+}
+.map-tiger {
+  position: absolute;
+  top: 518px;
+  left: 1022px;
+}
+.map-coala {
+  position: absolute;
+  top: 632px;
+  left: 1153px;
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: relative;
+  width: 300px;
+  /* z-index: 10; */
+  background: #3989c9;
+  color: #fff;
+  padding: 5px 0;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  opacity: 0;
+  transition: 1s;
+  /* bottom: 20px; */
+}
+[data-tooltip]:hover::after {
+  opacity: 1;
+}
+
+.footer {
+  background: #20113d;
+}
+.foter-ul {
+  padding: 70px 0;
+  display: flex;
+  align-items: center;
+}
+.foter-ico {
+  margin-right: 65px;
+}
+.footer-second-link {
+  margin-left: 36px;
+}
+
+.footer-link {
+  margin-right: 46px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.foter-btn {
+  margin-left: 50px;
+}
+.btn0 {
+  width: 359px;
+  height: 74px;
+  padding-right: 50px;
+  background: transparent url(../assets/images/white-right-arrow.png) no-repeat
+    top 24px left 290px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.btn0:hover,
+.btn0:active,
+.btn0:focus {
+  background: #00a092 url(../assets/images/white-right-arrow.png) no-repeat top
+    24px left 290px;
+}
+.footer-line {
+  width: 1400px;
+  height: 0px;
+  border: 1px solid #ffffff;
+}
+.footer-last__block {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.desc {
+  display: flex;
+}
+.foter-icon {
+  margin-right: 0px;
+  display: flex;
+}
+.p-desc {
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+  margin-right: 50px;
+}
+.fot-ico {
+  margin-right: 40px;
+}
+.fot-ico:last-child {
+  margin-right: 0;
+}
+[data-tooltip]:hover::after {
+  /* position: absolute; */
+  margin-top: 20px;
+  color: #fff;
+  content: attr(data-tooltip);
+  /* Выводим текст */
+}
+.foter-li:hover,
+.foter-li:focus,
+.foter-li:active {
+  opacity: 0.7;
+}
+.fot-ico:hover,
+.fot-ico:focus,
+.fot-ico:active {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 1200px) {
+  .header__wrapper {
+    align-items: center;
+  }
+  .wrapper {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+  .header__logo {
+    margin-left: 60px;
+  }
+  .header__ico-item:last-child {
+    margin-right: 60px;
+  }
+  .map {
+    max-width: 1120px;
+  }
+  .foter-btn {
+    margin-left: 0px;
+  }
+  .btn0 {
+    padding-right: 39px;
+  }
+  .foter-ico {
+    margin-right: 30px;
+  }
+  .footer-link {
+    margin-right: 20px;
+  }
+  .footer-second-link {
+    margin-left: 0px;
+  }
+  .foter-ul {
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: flex-end;
+    justify-content: space-between;*/
+  }
+}
